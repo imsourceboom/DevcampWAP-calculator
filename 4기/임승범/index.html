@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="name">
+            <div>임승범</div>
+            <span>계산기</span>
+        </div>
+        <div class="section calcul">
+            <div>
+                <input type="text" class="act" id="a-input" onkeyup='calcul()'>
+            </div>
+            <div>
+                <select class="red">
+                    <option value="1">+</option>
+                    <option value="2">-</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" class="act" id="b-input" onkeyup='calcul()'>
+            </div>
+        </div>
+        <div class="section">
+            <input type="text" id="total" disabled placeholder="결과값">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
